@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/str4d/dev/i2p/android/android-floating-action-button/library/src/main/res/values-v14/colors.xml -->
+    <eat-comment/>
+    <color name="default_disabled">@android:color/darker_gray</color>
+    <color name="default_normal">@android:color/holo_blue_dark</color>
+    <color name="default_pressed">@android:color/holo_blue_light</color>
+</resources>

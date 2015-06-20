@@ -16,7 +16,6 @@
 
 package com.grarak.kerneladiutor.utils;
 
-import com.grarak.kerneladiutor.BuildConfig;
 import com.grarak.kerneladiutor.elements.DAdapter;
 
 import java.util.ArrayList;
@@ -28,7 +27,7 @@ import java.util.List;
 public interface Constants {
 
     String TAG = "Kernel Adiutor";
-    String VERSION_NAME = BuildConfig.VERSION_NAME;
+    String VERSION_NAME = "prebuilt";
     String PREF_NAME = "prefs";
     String GAMMA_URL = "https://raw.githubusercontent.com/Grarak/KernelAdiutor/master/gamma_profiles.json";
     List<DAdapter.DView> ITEMS = new ArrayList<>();
