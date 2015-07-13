@@ -3,3 +3,4 @@
 -keep class com.bvalosek.**
 -keep class com.getbase.**
 -keep class android.**
+-dontwarn com.squareup.okhttp.**

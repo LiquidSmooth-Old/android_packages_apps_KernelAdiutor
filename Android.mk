@@ -9,22 +9,24 @@ LOCAL_SRC_FILES := $(call all-java-files-under, app/src/main)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../FloatingActionButton/library/src/main)
 
 LOCAL_RESOURCE_DIR := packages/apps/KernelAdiutor/app/src/main/res
-LOCAL_RESOURCE_DIR += packages/apps/FloatingActionButton/library/src/main/res
 LOCAL_RESOURCE_DIR += packages/apps/KernelAdiutor/res/appcompat
 LOCAL_RESOURCE_DIR += packages/apps/KernelAdiutor/res/cardview
 LOCAL_RESOURCE_DIR += packages/apps/KernelAdiutor/res/recyclerview
+LOCAL_RESOURCE_DIR += packages/apps/KernelAdiutor/res/materialtabs
+LOCAL_RESOURCE_DIR += packages/apps/FloatingActionButton/library/src/main/res
 
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
 LOCAL_AAPT_FLAGS := --auto-add-overlay
-LOCAL_AAPT_FLAGS += --extra-packages net.i2p.android.ext.floatingactionbutton
 LOCAL_AAPT_FLAGS += --extra-packages android.support.v7.appcompat
 LOCAL_AAPT_FLAGS += --extra-packages android.support.v7.cardview
 LOCAL_AAPT_FLAGS += --extra-packages android.support.v7.recyclerview
 LOCAL_AAPT_FLAGS += --extra-packages android.support.annotations
+LOCAL_AAPT_FLAGS += --extra-packages net.i2p.android.ext.floatingactionbutton
+LOCAL_AAPT_FLAGS += --extra-packages io.karim.materialtabs
 
 LOCAL_ASSET_DIR := packages/apps/KernelAdiutor/app/src/main/assets
 
-LOCAL_STATIC_JAVA_LIBRARIES += libdashclock libsupportv4 libcardviewv7 librecyclerviewv7 libappcompatv7 libannotations libnineoldandroids
+LOCAL_STATIC_JAVA_LIBRARIES += libdashclock libsupportv4 libcardviewv7 librecyclerviewv7 libappcompatv7 libannotations libnineoldandroids libpicasso libmaterialtabs
 
 include $(BUILD_PACKAGE)
 
@@ -36,6 +38,8 @@ LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libdashclock:libs/dashclock-api-r2.0.jar
                                         librecyclerviewv7:libs/android-support-v7-recyclerview.jar \
                                         libappcompatv7:libs/android-support-v7-appcompat.jar \
                                         libannotations:libs/android-support-annotations.jar \
-					libnineoldandroids:libs/nineoldandroids-2.4.0.jar
+                                        libnineoldandroids:libs/nineoldandroids-2.4.0.jar \
+                                        libpicasso:libs/picasso-2.5.2.jar \
+                                        libmaterialtabs:libs/materialtabs-2.0.2.jar
 
 include $(BUILD_MULTI_PREBUILT)
