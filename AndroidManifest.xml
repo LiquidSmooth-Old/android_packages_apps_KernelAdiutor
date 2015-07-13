@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.grarak.kerneladiutor"
-    android:versionCode="98"
-    android:versionName="0.9.4.3.2">
+    android:versionCode="103"
+    android:versionName="0.9.6">
 
     <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
