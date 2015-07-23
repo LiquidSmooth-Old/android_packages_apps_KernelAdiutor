@@ -194,6 +194,9 @@ public class RecoveryFragment extends RecyclerViewFragment {
             case R.id.menu_reboot_bootloader:
                 command = "reboot bootloader";
                 break;
+            case R.id.menu_reboot_soft:
+                command = "pkill zygote";
+                break;
             case R.id.menu_reboot_download:
                 command = "reboot download";
                 break;

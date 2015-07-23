@@ -9,6 +9,9 @@
         android:id="@+id/menu_reboot"
         android:title="@string/reboot" />
     <item
+        android:id="@+id/menu_reboot_soft"
+        android:title="@string/reboot_soft" />
+    <item
         android:id="@+id/menu_reboot_recovery"
         android:title="@string/reboot_recovery" />
     <item
