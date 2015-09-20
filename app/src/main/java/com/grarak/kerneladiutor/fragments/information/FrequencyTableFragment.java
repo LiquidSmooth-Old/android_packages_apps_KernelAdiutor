@@ -94,6 +94,9 @@ public class FrequencyTableFragment extends RecyclerViewFragment implements Cons
 
         backgroundView.setVisibility(View.GONE);
         backgroundView = null;
+
+        cpuSpyApp = new CpuSpyApp(CPU.getBigCore());
+        if (CPU.isBigLITTLE()) cpuSpyAppLITTLE = new CpuSpyApp(CPU.getLITTLEcore());
     }
 
     /**
@@ -103,7 +106,6 @@ public class FrequencyTableFragment extends RecyclerViewFragment implements Cons
     public void init(Bundle savedInstanceState) {
         super.init(savedInstanceState);
 
-        cpuSpyApp = new CpuSpyApp(CPU.getBigCore());
 
         if (CPU.isBigLITTLE()) {
             DDividerCard bigDivider = new DDividerCard();
@@ -128,7 +130,6 @@ public class FrequencyTableFragment extends RecyclerViewFragment implements Cons
         addView(frequencyCard);
 
         if (CPU.isBigLITTLE()) {
-            cpuSpyAppLITTLE = new CpuSpyApp(CPU.getLITTLEcore());
 
             DDividerCard LITTLEDivider = new DDividerCard();
             LITTLEDivider.setText(getString(R.string.little));
